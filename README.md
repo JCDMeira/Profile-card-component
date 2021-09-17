@@ -43,7 +43,7 @@ Users should be able to:
 
 ### result of my work
 
-<p  align="center"><img width="1080px" src="./presentation/design-x-myWork.png" align="center"></img></p>
+<p  align="center"><img width="1080px" src="./presentation/design-x-myWork.gif" align="center"></img></p>
 
 ### Links
 
