@@ -16,13 +16,14 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Overview
 
-This is the front-end mentor's third challenge. The challenge is to build this component of the 3-column preview card component solution and make it as close to the design as possible. Building the desing with whatever you want to finish, any language, framework or tools.
+This is the front-end mentor's fourth challenge. The challenge is to build this of the Profile-card-component and make it as close to the design as possible. Building the desing with whatever you want to finish, any language, framework or tools.
 
 ### The challenge
 
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
+- Build out the project to the designs provided
 
 ## Screenshot
 
@@ -46,40 +47,60 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution for this challenge](https://www.frontendmentor.io/solutions/3column-with-react-3BdTaZ_bd)
-- Live Site URL: [check the result ](https://jdcm-3-column.netlify.app)
+- Solution URL: [My solution for this challenge](#)
+- Live Site URL: [check the result ](#)
 
 ## My process
 
 ### Built with
 
 - Flexbox
+- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-### What I learned (arrumar)
+### What I learned
 
-Sometimes keep measurements fixed and not just based on percentages. When all measurements are based on percentages, unwanted behaviors can occur that will cause you to get lost in the styling.
-By using only percentages I found errors in my responsive design, and when I established fixed heights for content and cards, the design was much better suited to responsiveness, with only the width behaving as adaptable, while the cards had defined sizes.
+When we need to show only a part of an image, we should use overflow, but image with position defined as "absolute" does not suit "hidden" overflow well.
+An alternative was to use position as "fixed"
 
 ```CSS
-  @media (max-width: 928px) {
-  .conteiner {
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: inherit; /**/
+  #top {
+  position: fixed;
+  width: 978px;
+  height: 978px;
+  left: -750px;
+  top: -600px;
+}
+#bottom {
+  position: fixed;
+  width: 978px;
+  height: 978px;
+  left: 150px;
+  top: 294px;
+  z-index: 1;
+}
+
+```
+
+For the responsive design to be effective, it was necessary to use relative units based on the screen size, such as vw (viewport width) and vh (viewport height) which use the width and height of the viewport respectively. And for that I used the px conversion [calculator](https://it-news.pw/pxtovh/) for these measurements.
+
+```CSS
+  @media (min-width: 768px) {
+  #top {
+    position: fixed;
+    width: 67.9166vw;
+    height: 135.833vh;
+    left: -20vw;
+    top: -69.444vh;
   }
 
-  .content {
-    width: 87.2%;
-
-    height: 132.6rem;
-    background: white;
-    margin: 88px 0 88px 0;
-
-    display: inline; /*  */
+  #bottom {
+    position: fixed;
+    width: 67.9166vw;
+    height: 135.833vh;
+    left: 48vw;
+    top: 52vh;
+    z-index: 1;
   }
 }
 
@@ -88,9 +109,9 @@ By using only percentages I found errors in my responsive design, and when I est
 ### Useful resources
 
 - [react tutorial](https://pt-br.reactjs.org/tutorial/tutorial.html) - This helped me structure the components and build the proposed page.
-- [my figma design](https://www.figma.com/file/IY4faSy5LPomrLSln321Ag/bottom?node-id=0%3A1) - My figma design for help anyone who wants to build this challenge.
-- [CSS units](https://www.alura.com.br/artigos/guia-de-unidades-no-css) - CSS units guide .
-- [text-tranform](https://www.maujor.com/blog/2013/03/08/por-que-height-100-nao-funciona/) - This is an amazing article that finally helped me solve my design liability issue. And I would recommend to anyone who still has this problem to read it.
+- [my figma design](https://www.figma.com/file/PWaDMZ72cyiyXyOog48yHy/4---Profile-card-component---frontend-Mentor?node-id=0%3A1) - My figma design for help anyone who wants to build this challenge.
+- [CSS units conversor - px to VH/VW/REM](https://it-news.pw/pxtovh/) - CSS units conversor .
+- [CSS - overflow](https://www.w3schools.com/css/css_overflow.asp) - This is an article that helped me understand overflow properties.
 
 ## Author
 
