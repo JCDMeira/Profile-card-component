@@ -47,8 +47,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution for this challenge](#)
-- Live Site URL: [check the result ](#)
+- Solution URL: [My solution for this challenge](https://www.frontendmentor.io/solutions/profile-card-with-reactjs-4Rvn40r0b)
+- Live Site URL: [check the result ](https://jcdmeira-profile-card.netlify.app)
 
 ## My process
 
