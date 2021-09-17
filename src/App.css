@@ -34,25 +34,19 @@ html {
   z-index: 1;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #top {
     position: fixed;
-    width: 978px;
-    height: 978px;
-    /* left: -273px; */
-    left: -288px;
-    /* top: -530px; */
-    top: -500px;
+    width: 67.9166vw;
+    height: 135.833vh;
+    left: -20vw;
+    top: -69.444vh;
   }
 
   #bottom {
     position: fixed;
-    /* width: 978px;
-    height: 978px; */
     width: 67.9166vw;
     height: 135.833vh;
-    /* left: 692px;
-    top: 370px; */
     left: 48vw;
     top: 52vh;
     z-index: 1;
