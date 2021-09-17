@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.conteiner {
+  background: #19a1ad;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#top {
+  position: absolute;
+  width: 978px;
+  height: 978px;
+  left: -750px;
+  top: -600px;
+}
+#bottom {
+  position: absolute;
+  width: 978px;
+  height: 978px;
+  left: 150px;
+  top: 294px;
+}
