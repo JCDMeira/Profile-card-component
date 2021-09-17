@@ -15,19 +15,21 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #top {
-  position: absolute;
+  position: fixed;
   width: 978px;
   height: 978px;
   left: -750px;
   top: -600px;
 }
 #bottom {
-  position: absolute;
+  position: fixed;
   width: 978px;
   height: 978px;
   left: 150px;
   top: 294px;
+  z-index: 1;
 }
