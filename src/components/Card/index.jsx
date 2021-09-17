@@ -20,15 +20,15 @@ function Card() {
       </div>
 
       <div className="allData">
-        <div>
+        <div className="firstData">
           <h1 className="data">80k</h1>
           <p>Followers</p>
         </div>
-        <div>
+        <div className="secondData">
           <h1 className="data">803k</h1>
           <p>Likes</p>
         </div>
-        <div>
+        <div className="thirdData">
           <h1 className="data">1.4k</h1>
           <p>Photos</p>
         </div>

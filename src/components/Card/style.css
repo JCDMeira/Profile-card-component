@@ -1,6 +1,7 @@
 .card {
   height: 37.4rem;
   width: 86.6%;
+  max-width: 35rem;
   background: #fff;
   z-index: 3;
   border-radius: 1rem;
@@ -15,7 +16,7 @@
 
 .circle {
   position: relative;
-  left: 109px;
+  /* left: 109px; */
   top: -57px;
   height: 10.6rem;
   width: 10.6rem;
@@ -24,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
 }
 .circle img {
   height: 9.6rem;
@@ -74,9 +75,10 @@
   align-items: center;
 }
 
-.allData h1 {
+.allData .data {
   text-transform: uppercase;
   text-align: center;
+  margin-left: -1.2rem;
 }
 
 .allData p {
@@ -84,4 +86,24 @@
   font-weight: 400;
   text-align: center;
   font-size: 13px;
+  margin-left: -1.2rem;
+}
+
+.allData .firstData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.allData .secondData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.allData .thirdData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
